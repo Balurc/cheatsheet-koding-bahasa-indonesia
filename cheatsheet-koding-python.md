@@ -5,7 +5,8 @@
 - Sebuah file Python memiliki ekstensi .py.
 - Python menggunakan indentasi untuk memisahkan blok kode, bukan menggunakan kurung kurawal ({}) seperti bahasa pemrograman lainnya.
 - Anda dapat menjalankan file Python dengan menggunakan perintah berikut di cmd (Windows) atau shell (Mac/Linux):
-`python <namafile.py>` atau `python3 <namafile.py>`
+
+  `python <namafile.py>` atau `python3 <namafile.py>`
 
 
 ## Cara membuat dan mengeksekusi program
@@ -127,7 +128,7 @@
   Contoh : `my_list = [1, 2, 3, "empat", True]`.
 - Anda dapat mengakses elemen dalam list dengan menggunakan indeksnya. Indeks dimulai dari 0 untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya.
 
-  Contoh : `print(my_list[0])   # Output: 1` & `print(my_list[3])   # Output: "empat"`.
+  Contoh : `print(my_list[0])   # Output: 1` & `print(my_list[3]) # Output: "empat"`.
 - List juga dapat dibuat dengan konstruktor `list()`.
 
   Contoh : `buah = list(("apel", "pisang", "mangga"))  # gunakan braket kurung dobel`.
