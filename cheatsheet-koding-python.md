@@ -9,6 +9,7 @@
   `python <namafile.py>` atau `python3 <namafile.py>`
 
 
+
 ## Cara membuat dan mengeksekusi program
 1. Buka terminal/cmd
 2. Buat programnya: nano/cat > nama_program.py
@@ -16,11 +17,13 @@
 4. Jalankan program dengan perintah: python nama_program.py
 
 
+
 ## Sintaks dasar
 - Komentar menggunakan tanda `#` : `# Ini adalah komentar`
 - Indentasi menggunakan spasi atau tab.
 - Mengakhiri pernyataan tidak memerlukan tanda titik koma (`;`).
 - Deklarasi variabel : `nama_variabel = nilai`.
+
 
 
 ## Tipe data dasar
@@ -35,7 +38,8 @@
 | complex   | Bilangan complex : 2+3j, 4-1j     |
 
 
-## Kata Kunci
+
+## Kata kunci
 
 | **Kata Kunci** |                                        **Keterangan**                                       |       **Kategori**       |
 |:--------------:|:-------------------------------------------------------------------------------------------:|:------------------------:|
@@ -74,6 +78,7 @@
 |       del      |                    Menghapus/menghilangkan data yang ditentukan pengguna                    |         Variable         |
 |     global     |             Digunakan untuk mengakses variabel yang didefinisikan di luar fungsi            |         Variable         |
 |    nonlocal    |                         Mengubah variabel dari cakupan yang berbeda                         |         Variable         |
+
 
 
 ## Operator
@@ -118,7 +123,9 @@
 | ,            | pemisah seperti dalam (y = x, z = ++x)                                         |
 
 
+
 ## Struktur data dasar
+
 
 ### List
 - Digunakan untuk menyimpan kumpulan elemen yang terurut. 
@@ -150,6 +157,7 @@
 - Menghitung jumlah kemunculan elemen : `jumlah_kemunculan = my_list.count(elemen)`.
 
 
+
 ### Dictionary
 - Dictionary adalah struktur data yang digunakan untuk menyimpan pasangan kunci-nilai (key-value pairs). 
 - Dalam dictionary, kunci (key) harus unik dan digunakan untuk mengakses nilai-nilai yang terkait.
@@ -173,6 +181,7 @@
 - Mengembalikan daftar tuple pasangan kunci-nilai dalam dictionary : `daftar_pasangan = list(my_dict.items())`.
 
 
+
 ### Tuple
 - Tuple adalah tipe data yang mirip dengan list, namun dengan perbedaan utama yaitu tuple bersifat tidak dapat diubah atau immutable.
 - Setelah sebuah tuple dibuat, elemen-elemennya tidak dapat ditambahkan, diubah, atau dihapus.
@@ -192,6 +201,7 @@
   
     print(my_tuple[0])  # Output: 'a'
     ```
+    
     
     
 ### Set
@@ -215,6 +225,7 @@
   ```
 - Operasi irisan set : `intersection_set = set1 & set2 # output {3}`.
 - Operasi perbedaan set : `difference_set = set1 - set2 # output {1,2}`.
+
 
 
 ## Manipulasi String
@@ -300,6 +311,7 @@
   ```
 
 
+
 ## Conditional (Percabangan)
 - Digunakan untuk melakukan pengambilan keputusan berdasarkan kondisi yang diberikan. 
 - Dengan menggunakan struktur kontrol kondisional, Anda dapat menjalankan blok kode tertentu jika suatu kondisi terpenuhi, dan menjalankan blok kode yang berbeda jika kondisi tersebut tidak terpenuhi.
@@ -341,6 +353,7 @@
       
   # Output: Anda sudah dewasa
   ```
+
 
 
 ## Loop (Perulangan)
@@ -385,6 +398,7 @@
   ```
 
 
+
 ## Try-except (Penanganan eksepsi)
 - Try-except adalah mekanisme yang digunakan untuk menangani eksepsi atau kesalahan yang terjadi saat program dieksekusi.
 - Dalam blok try, kita menempatkan potensi kode yang mungkin menghasilkan eksepsi.
@@ -409,6 +423,7 @@
       # Blok finally akan dieksekusi
       pernyataan
   ```
+ 
  
 
 ## Function (Fungsi)
