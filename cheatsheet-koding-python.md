@@ -126,9 +126,12 @@
 - List dapat dibuat dengan menggunakan tanda kurung siku `[ ]` dan dapat menyimpah tipe data berbeda.
 
   Contoh : `my_list = [1, 2, 3, "empat", True]`.
-- Anda dapat mengakses elemen dalam list dengan menggunakan indeksnya. Indeks dimulai dari 0 untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya.
-
-  Contoh : `print(my_list[0])   # Output: 1` & `print(my_list[3]) # Output: "empat"`.
+- Anda dapat mengakses elemen dalam list dengan menggunakan indeksnya. Indeks dimulai dari 0 untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya. Contoh : 
+  ```
+  print(my_list[0])   # Output: 1
+  
+  print(my_list[3]) # Output: "empat"
+  ```
 - List juga dapat dibuat dengan konstruktor `list()`.
 
   Contoh : `buah = list(("apel", "pisang", "mangga"))  # gunakan braket kurung dobel`.
@@ -151,7 +154,14 @@
 - Dictionary adalah struktur data yang digunakan untuk menyimpan pasangan kunci-nilai (key-value pairs). 
 - Dalam dictionary, kunci (key) harus unik dan digunakan untuk mengakses nilai-nilai yang terkait.
 - Cara membuat dictionary adalah dengan menggunakan `{}`. Contoh : `my_dict = {} # dictionary kosong`. Cara lain adalah menggunakan konstruktor `dict()`.
-- Membuat dictionary dengan pasangan kunci-nilai : `my_dict = {kunci1: nilai1, kunci2: nilai2, kunci3: nilai3}`.
+- Membuat dictionary dengan pasangan kunci-nilai : 
+  ```
+  my_dict = {
+             kunci1: nilai1, 
+             kunci2: nilai2, 
+             kunci3: nilai3
+            }
+  ```
 - Cara mengakses nilai berdasarkan kunci : `nilai = my_dict[kunci1] # output nilai1`.
 - Mengubah nilai berdasarkan kunci : `my_dict[kunci] = nilai_baru`.
 - Menambahkan pasangan kunci-nilai baru : `my_dict[kunci_baru] = nilai_baru`.
@@ -169,17 +179,21 @@
 - Tuple biasanya digunakan dalam situasi ketika kita ingin menyimpan kumpulan elemen yang tetap dan tidak berubah sepanjang waktu. 
 - Tuple dideklarasikan dengan menggunakan tanda kurung `()` atau tanpa tanda kurung. Contohnya:
   
-  `my_tuple = (elemen1, elemen2, elemen3)`
+  ```
+  my_tuple = (elemen1, elemen2, elemen3)`
   
-  `my_tuple = elemen1, elemen2, elemen3  # Tanpa tanda kurung`
+  my_tuple = elemen1, elemen2, elemen3  # Tanpa tanda kurung
+  ```
  - Elemen-elemen tuple dapat berupa objek dengan tipe data yang berbeda, seperti angka, string, tuple lain, atau objek lainnya.
  - Satu-satunya operasi yang dapat dilakukan pada tuple adalah mengakses elemennya. Elemen di tuple dapat diakses menggunakan indeks, mirip dengan list. Indeks dimulai dari 0. Contohnya:
 
-    `my_tuple = ('a', 'b', 'c')`
+    ```
+    my_tuple = ('a', 'b', 'c')
   
-    `print(my_tuple[0])  # Output: 'a'`
+    print(my_tuple[0])  # Output: 'a'
+    ```
     
-
+    
 ### Set
 - Set adalah koleksi tidak berurutan dari elemen-elemen unik. 
 - Di dalam set, tidak ada elemen duplikat.
@@ -192,41 +206,234 @@
 - Cara menghapus elemen dari set : `my_set.remove(3)`.
 - Operasi gabungan set : 
 
-  `set1 = {1, 2, 3}`
+  ```
+  set1 = {1, 2, 3}
   
-  `set2 = {3, 4, 5}`
+  set2 = {3, 4, 5}
   
-  `union_set = set1 | set2 # output: {1,2,3,4,5}`
+  union_set = set1 | set2 # output: {1,2,3,4,5}
+  ```
 - Operasi irisan set : `intersection_set = set1 & set2 # output {3}`.
 - Operasi perbedaan set : `difference_set = set1 - set2 # output {1,2}`.
 
+
 ## Manipulasi String
+- Cara menggabungkan dua atau lebih string menjadi satu:
+
+  ```
+  string1 = "Hello"
+  
+  string2 = "World"
+  
+  gabungan = string1 + " " + string2
+  
+  print(gabungan)  # Output: Hello World
+  ```
+- Cara memotong atau mengambil sebagian dari string berdasarkan indeks:
+
+  ```
+  string = "Hello, World"
+  
+  potongan = string[7:12]
+  
+  print(potongan)  # Output: World
+  ```
+- Cara mencari posisi pertama kemunculan dari sebuah kata dalam string:
+
+  ```
+  string = "Hello, World"
+  
+  posisi = string.find("World")
+  
+  print(posisi)  # Output: 7
+  ```
+- Cara menggantikan sebuah kata dengan kata lain dalam string:
+
+  ```
+  string = "Hello, World"
+  
+  baru = string.replace("World", "Python")
+  
+  print(baru)  # Output: Hello, Python
+  ```
+- Cara mengubah string menjadi huruf kapital (uppercase) atau huruf kecil (lowercase):
+
+  ```
+  string = "Hello, World"
+  
+  uppercase = string.upper()
+  
+  lowercase = string.lower()
+  
+  print(uppercase)  # Output: HELLO, WORLD
+  
+  print(lowercase)  # Output: hello, world
+  ```
+- Cara mendapatkan jumlah karakter dalam string:
+
+  ```
+  string = "Hello, World"
+
+  panjang = len(string)
+
+  print(panjang)  # Output: 13
+  ```
+- Cara memisahkan string menjadi beberapa bagian berdasarkan pemisah (separator):
+
+  ```
+  string = "Hello, World"
+  
+  pecah = string.split(",")
+  
+  print(pecah)  # Output: ['Hello', ' World']
+  ```
+- Cara menggabungkan nilai variabel ke dalam string dengan menggunakan metode formatting.
+
+  ```
+  nama = "John"
+  
+  umur = 25
+  
+  string = "Nama: {}, Umur: {}".format(nama, umur)
+  
+  print(string)  # Output: Nama: John, Umur: 25
+  ```
+
 
 ## Conditional (Percabangan)
+- Digunakan untuk melakukan pengambilan keputusan berdasarkan kondisi yang diberikan. 
+- Dengan menggunakan struktur kontrol kondisional, Anda dapat menjalankan blok kode tertentu jika suatu kondisi terpenuhi, dan menjalankan blok kode yang berbeda jika kondisi tersebut tidak terpenuhi.
+- Dalam Python, struktur kontrol kondisional dapat dicapai menggunakan pernyataan `if`, `elif`, dan `else`.
+- Contoh sintaks dasar dari struktur kontrol kondisional:
+
+  ```
+  if kondisi:
+      # Blok kode yang dijalankan jika kondisi terpenuhi
+      pernyataan1
+      pernyataan2
+      # ...
+
+  elif kondisi_lain:
+      # Blok kode yang dijalankan jika kondisi_lain terpenuhi
+      pernyataan3
+      pernyataan4
+      # ...
+
+  else:
+      # Blok kode yang dijalankan jika tidak ada kondisi yang terpenuhi sebelumnya
+      pernyataan5
+      pernyataan6
+      # ...
+   ```
+- Pernyataan `if` pertama mengevaluasi kondisi tertentu. Jika kondisi tersebut terpenuhi (nilai True), maka blok kode dalam pernyataan `if` akan dijalankan.
+- Jika kondisi dalam pernyataan `if` tidak terpenuhi, maka Python akan mengevaluasi pernyataan `elif` (jika ada). Jika kondisi dalam pernyataan `elif` terpenuhi, maka blok kode dalam pernyataan `elif` akan dijalankan.
+- Jika tidak ada kondisi dalam pernyataan `if` atau `elif` yang terpenuhi, maka blok kode dalam pernyataan `else` (jika ada) akan dijalankan.
+- Di contoh dibawah, program akan mengevaluasi umur dan menjalankan blok kode yang sesuai dengan kondisi umur yang diberikan.
+  ```
+  umur = 20
+
+  if umur < 18:
+      print("Anda masih di bawah umur")
+  elif umur >= 18 and umur < 60:
+      print("Anda sudah dewasa")
+  else:
+      print("Anda adalah seorang senior")
+      
+  # Output: Anda sudah dewasa
+  ```
+
 
 ## Loop (Perulangan)
+- Loop atau perulangan adalah konstruksi yang memungkinkan kita menjalankan serangkaian pernyataan secara berulang selama kondisi tertentu terpenuhi.
+- Dua jenis perulangan yang umum digunakan dalam Python adalah perulangan for dan perulangan while.
+- Perulangan `for` digunakan untuk melakukan iterasi melalui elemen-elemen dalam sebuah urutan, seperti list, tuple, atau string. Contoh:
+  ```
+  # Perulangan for untuk list
+  my_list = [1, 2, 3, 4, 5]
+  for elemen in my_list:
+      print(elemen)
+
+  # Perulangan for untuk string
+  my_string = "Hello, World!"
+  for karakter in my_string:
+      print(karakter)
+
+  # Perulangan for menggunakan range()
+  for angka in range(1, 6):
+      print(angka)
+  ```
+- Perulangan `while` digunakan untuk menjalankan serangkaian pernyataan selama kondisi tertentu terpenuhi. Pada setiap iterasi, kondisi akan diperiksa, dan jika kondisi masih benar, pernyataan-pernyataan dalam perulangan akan dijalankan. Contoh:
+  ```
+  angka = 1
+  while angka <= 5:
+      print(angka)
+      angka += 1
+  ```
+- `break` dapat digunakan untuk menghentikan perulangan secara paksa. Contoh:
+  ```
+  for angka in range(1, 11):
+      if angka == 5:
+          break
+      print(angka)
+  ```
+- Untuk melanjutkan ke iterasi berikutnya, kita dapat gunakan `continue`. Contoh:
+  ```
+  for angka in range(1, 11):
+      if angka == 5:
+          continue
+      print(angka)
+  ```
+
 
 ## Try-except (Penanganan eksepsi)
+- Try-except adalah mekanisme yang digunakan untuk menangani eksepsi atau kesalahan yang terjadi saat program dieksekusi.
+- Dalam blok try, kita menempatkan potensi kode yang mungkin menghasilkan eksepsi.
+- Sedangkan dalam blok except, kita menangani eksepsi tersebut dengan melakukan tindakan tertentu. Contoh format umum:
+  ```
+  try:
+      # Potensi kode yang mungkin memunculkan eksepsi
+      pernyataan
+  except JenisEksepsi:
+      # Penanganan eksepsi
+      pernyataan
+  ```
+ - Blok finally (opsional) akan selalu dieksekusi terlepas dari apakah eksepsi terjadi atau tidak. Contohnya:
+  ```
+  try:
+      # Potensi kode yang mungkin memunculkan eksepsi
+      pernyataan
+  except JenisEksepsi:
+      # Penanganan eksepsi
+      pernyataan
+  finally:
+      # Blok finally akan dieksekusi
+      pernyataan
+  ```
+ 
 
-## Function
+## Function (Fungsi)
+- Fungsi adalah blok kode yang terorganisir secara terpisah yang digunakan untuk melakukan tugas tertentu. 
+- Fungsi dapat mengambil argumen (input) dan mengembalikan nilai (output) setelah melakukan komputasi atau operasi tertentu.
+- Fungsi juga dapat digunakan untuk mengorganisir kode menjadi bagian-bagian yang terpisah untuk memudahkan pengelolaan dan pemeliharaan kode.
+- Cara membuat fungsi adalah dengan menggunakan kata kunci `def` diikuti oleh nama fungsi dan tanda kurung `( )`. Jika fungsi membutuhkan argumen, Anda dapat menuliskannya di dalam tanda kurung tersebut. Jika tidak, biarkan tanda kurung tersebut kosong. Contoh:
+  ```
+  # Contoh fungsi tanpa argumen
+  def sapa():
+      print("Halo, selamat datang!")
 
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
+  # Contoh fungsi dengan argumen
+  def luas_persegi(sisi):
+      luas = sisi * sisi
+      print("Luas persegi dengan sisi", sisi, "adalah", luas)
+   ```
+- Fungsi dapat mengembalikan nilai. Gunakan pernyataan `return` untuk mengembalikan nilai. Setelah pernyataan `return` dieksekusi, fungsi akan berakhir.
+  ```
+  def luas_persegi(sisi):
+      luas = sisi * sisi
+      return luas
+  ```
+- Setelah didefinisikan, fungsi dapat dipanggil dengan nama fungsi dan diikuti oleh anda kurung `( )`. Jika fungsi memiliki argumen, berikan nilai argumen yang sesuai di dalam tanda kurung tersebut.
+  ```
+  sapa()  # Memanggil fungsi tanpa argumen
+  luas_persegi(5)  # Memanggil fungsi dengan argumen
+  ```
