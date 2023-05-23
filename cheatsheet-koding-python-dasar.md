@@ -228,7 +228,7 @@
 
 
 
-## Manipulasi String
+## Manipulasi string
 - Cara menggabungkan dua atau lebih string menjadi satu:
 
   ```
